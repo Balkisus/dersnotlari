@@ -1,0 +1,123 @@
+fremwork
+mvc
+app model (veri tabaný dosyalarý örn: ülkeler)
+resources view ( görsel kýsým css,html jquery)
+app controller ( php dosyalarý)
+
+config uygulama ayarlarý
+public js dosyalarý
+routes yönlendirme ayarlarý
+
+
+php artisan list
+
+make:command         
+  make:controller      
+  make:event 
+
+4
+
+Route::get('/','IndexController@getIndex');
+
+
+<?php
+
+namespace AppHttpControllers;
+
+use IlluminateHttpRequest;
+
+class IndexController extends Controller
+{
+public function yunusbalkis($test){
+return 'DEGER : '.$test;
+}
+}
+
+?>
+
+
+<?php
+Route::get('/yunus/{test}','IndexController@yunusbalkis');
+?>
+
+
+
+
+
+
+
+shift + A creat kýsa yolu
+tab edit mod
+ctrl + tab yüzey nokta ve kenar seçimi için
+
+shift ile birden fazla yüzeyi  seçebiliriz
+
+extrude individual yüzeyleri baðýmsýz olarak þelillendirir.
+
+ctrl + R yüzeyi çizgisel bölme
+
+subdivide yüzeyleri parçalara ayýrýyor
+
+I inset faces yüzey içine yeni yüzel ekliyor tekli 
+dissolve  kullanýldýktan sonra yüzeyleri birleþtiriyor ama only de sadece çizgi sildiði için olmuyor
+
+F ile seçtiðimiz iki çizgi arasýna yeni yüzey ekledik
+----------------------------------
+
+ctrl + alt ring yan yana olan dikey çizgileri seçer
+
+alt ile edge loop yanyana olan çizgileri seçer
+ 
+s ile boyutlandýr
+
+subdivision surface nesneyi yumuþatýr
+
+
+
+
+route:list yönlendirme listesi
+
+<script type="text/javascript" src="{{URL::asset("js/jquery-3.4.1.min.js")}}"></script>
+
+veya
+
+{!! HTML::script('js/jquery-3.4.1.min.js')!!}
+
+
+@extends('app')
+
+@section('content')
+{{ "orta alan"}}
+@stop
+
+
+composer require laravelcollective/html
+ html paketi yükleme
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
