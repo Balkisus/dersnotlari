@@ -8,6 +8,7 @@ config uygulama ayarlarý
 public js dosyalarý
 routes yönlendirme ayarlarý
 
+asdasd
 
 php artisan list
 
